@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+h5 {
+  width: 50px;
+  position: relative;
+  top: 23px;
+  left: 90%;
+  cursor: pointer;
+  font-size: 2rem;
+}
+h5:before {
+  content: attr(data-count);
+  color: white;
+  position: absolute;
+  right: 16px;
+  font-size: 15px;
+  text-align: center;
+  top: -12px;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  opacity: 0;
+}
+h5.zero:before {
+  opacity: 1;
+}
+
+.swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+
+.products .product-slider {
+  padding: 1rem;
+}
+
+.products .product-slider:first-child {
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 5px;
+  background: red;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.products .product-slider .box {
+  background: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: black;
+  box-shadow: blue;
+  transition: 0.2s linear;
+}
+
+.products .product-slider .box:hover {
+  outline-offset: 0rem;
+  outline: var(--outline-hover);
+}
+
+.products .product-slider .box img {
+  height: 20rem;
+}
+
+.products .product-slider .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.products .product-slider .box h6 {
+  font-size: 2rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+
+.products .item span {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+  background: red;
+  width: 300px;
+  height: 186px;
+  display: none;
+}
+
+.products .item span img {
+  width: 100%;
+  height: 100%;
+}
+
+.products .item:nth-child(1) > span.active {
+  animation: first 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+.products .item:nth-child(2) > span.active {
+  animation: second 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+.products .item:nth-child(3) > span.active {
+  animation: third 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+.products .item:nth-child(4) > span.active {
+  animation: four 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+.products .item:nth-child(5) > span.active {
+  animation: five 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+.products .item:nth-child(6) > span.active {
+  animation: six 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+.products .item:nth-child(7) > span.active {
+  animation: seven 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+.products .item:nth-child(8) > span.active {
+  animation: eight 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+
+.select {
+  width: 60%;
+  height: 580px;
+  padding: 5%;
+  background: #591aacf8;
+  position: absolute;
+  top: -1000px;
+  left: 20%;
+  transition: 0.5s;
+  overflow-y: auto;
+  margin: auto;
+}
+.select.display {
+  top: 10px;
+}
+.select div {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  padding: 5px;
+  border: 1px solid white;
+  position: relative;
+  margin: 5px auto;
+}
+.select div img {
+  width: 300px;
+  height: 100%;
+}
+.select div h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.select div p {
+  color: white;
+  margin-top: 64px;
+  margin-left: -166px;
+  font-size: 19px;
+}
+
+.select div h6 {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  color: white;
+  font-size: 1.5rem;
+}
+.select div button {
+  position: absolute;
+  left: 45%;
+  top: 58%;
+  color: white;
+}
+.select div button {
+  left: 45%;
+  top: 70%;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  padding: 0.6rem 1.4rem;
+}
+.select div span {
+  display: none;
+}
